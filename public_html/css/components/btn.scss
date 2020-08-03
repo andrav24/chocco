@@ -6,6 +6,8 @@
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   
   &--theme--white {
     background: #ffffff;
@@ -14,6 +16,26 @@
     &:hover {
       background: $darkGreen;
       color: #ffffff;
+    }
+  }
+
+  &--theme--green {
+    background: $darkGreen;
+    color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: $darkGreen;
+    }
+  }
+
+  &--theme--transparent {
+    background: transparent;
+    color: #000;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $darkGreen;
     }
   }
 }
