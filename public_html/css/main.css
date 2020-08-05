@@ -77,6 +77,13 @@ button {
   cursor: pointer;
 }
 
+.logo {
+  font-size: 30px;
+  width: 7%;
+  word-wrap: break-word;
+  line-height: 0.72;
+}
+
 .hero {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
