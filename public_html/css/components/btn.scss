@@ -8,6 +8,7 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  outline: none;
   
   &--theme--white {
     background: #ffffff;
@@ -16,6 +17,7 @@
     &:hover {
       background: $darkGreen;
       color: #ffffff;
+      transition: .2s;
     }
   }
 
@@ -26,6 +28,7 @@
     &:hover {
       background: #ffffff;
       color: $darkGreen;
+      transition: .2s;
     }
   }
 
@@ -36,6 +39,7 @@
 
     &:hover {
       color: $darkGreen;
+      transition: .2s;
     }
   }
 }

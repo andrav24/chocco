@@ -1,5 +1,5 @@
 .reviews__display {
-  background: #F8FAF9;
+  background: #F8FAF9 url("../img/decor/drown-berries.png") right top no-repeat;
   padding: 42px 142px 42px 40px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -7,15 +7,15 @@
   
   &:before {
     content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #F2F5F4;
+    border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -65px;
-    display: block;
-    width: 90px;
-    height: 90px;
-    background: #ffffff;
-    border-radius: 50%;
   }
 }
 

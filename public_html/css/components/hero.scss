@@ -21,6 +21,18 @@
   }
 }
 
+.hero__features {
+  display: flex;
+}
+
+.hero__features-item {
+  margin-right: 48px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .hero__title-section {
   width: 46%;
 }

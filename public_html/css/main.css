@@ -105,6 +105,17 @@ button {
   right: 0;
 }
 
+.hero__features {
+  display: flex;
+}
+
+.hero__features-item {
+  margin-right: 48px;
+}
+.hero__features-item:last-child {
+  margin-right: 0;
+}
+
 .hero__title-section {
   width: 46%;
 }
@@ -173,17 +184,6 @@ button {
   margin-right: 6px;
 }
 
-.features {
-  display: flex;
-}
-
-.features__item {
-  margin-right: 48px;
-}
-.features__item:last-child {
-  margin-right: 0;
-}
-
 .feature {
   display: flex;
 }
@@ -209,6 +209,7 @@ button {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 .btn--theme--white {
   background: #ffffff;
@@ -217,6 +218,7 @@ button {
 .btn--theme--white:hover {
   background: #0b4d3c;
   color: #ffffff;
+  transition: 0.2s;
 }
 .btn--theme--green {
   background: #0b4d3c;
@@ -225,6 +227,7 @@ button {
 .btn--theme--green:hover {
   background: #ffffff;
   color: #0b4d3c;
+  transition: 0.2s;
 }
 .btn--theme--transparent {
   background: transparent;
@@ -233,6 +236,7 @@ button {
 }
 .btn--theme--transparent:hover {
   color: #0b4d3c;
+  transition: 0.2s;
 }
 
 .section {
@@ -316,6 +320,7 @@ button {
 .benefit__icon {
   width: 68px;
   height: 68px;
+  fill: black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -341,7 +346,7 @@ button {
 }
 
 .reviews__display {
-  background: #F8FAF9;
+  background: #F8FAF9 url("../img/decor/drown-berries.png") right top no-repeat;
   padding: 42px 142px 42px 40px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -349,15 +354,15 @@ button {
 }
 .reviews__display:before {
   content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: #F2F5F4;
+  border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -65px;
-  display: block;
-  width: 90px;
-  height: 90px;
-  background: #ffffff;
-  border-radius: 50%;
 }
 
 .reviews__display-inner {
@@ -422,6 +427,9 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
+  border-radius: 50%;
+  padding: 0;
+  outline: none;
 }
 
 .interactive-avatar__img {
