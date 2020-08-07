@@ -1,11 +1,15 @@
+@charset "UTF-8";
 @import url("base/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+html {
+  font-size: 18px;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-size: 18px;
   font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -24,12 +28,13 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-width: 960px;
   min-height: 100%;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  /*чтобы при сужении/расширении окна был небольшой отступ.Альтернативный вариант width: 100%; padding: rem(10px) rem(10px);*/
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -78,7 +83,7 @@ button {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   width: 7%;
   word-wrap: break-word;
   line-height: 0.72;
@@ -88,20 +93,20 @@ button {
   background: url("../img/decor/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   color: #ffffff;
   position: relative;
 }
 .hero:before {
   content: url("../img/decor/corner-leaf.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   left: 3%;
 }
 .hero:after {
   content: url("../img/decor/berries-and-leaves.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   right: 0;
 }
 
@@ -110,7 +115,7 @@ button {
 }
 
 .hero__features-item {
-  margin-right: 48px;
+  margin-right: 2.6666666667rem;
 }
 .hero__features-item:last-child {
   margin-right: 0;
@@ -125,21 +130,21 @@ button {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px;
+  padding: 1.3333333333rem 0 2.7777777778rem;
   background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
 }
 
 .hero__title-main {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 0.8333333333rem;
   line-height: 1.24;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 48px;
+  font-size: 1.1666666667rem;
+  margin-bottom: 2.6666666667rem;
   padding-right: 15%;
   line-height: 1.24;
 }
@@ -161,7 +166,7 @@ button {
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 0.8333333333rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -174,14 +179,14 @@ button {
 .phone-number {
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.2222222222rem;
   text-decoration: none;
 }
 
 .phone-number__icon-elem {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
+  margin-right: 0.3333333333rem;
 }
 
 .feature {
@@ -189,22 +194,22 @@ button {
 }
 
 .feature__icon {
-  width: 40px;
-  margin-right: 12px;
+  width: 2.2222222222rem;
+  margin-right: 0.6666666667rem;
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 74px;
+  font-size: 0.8888888889rem;
+  max-width: 4.1111111111rem;
   line-height: 1.2;
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 0.8888888889rem;
   font-weight: bold;
-  padding: 21px 41px;
+  padding: 1.1666666667rem 2.2777777778rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 5.5555555556rem;
   line-height: 1;
   text-decoration: none;
   border: none;
@@ -241,7 +246,7 @@ button {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,21 +259,21 @@ button {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 1.6666666667rem;
   text-align: center;
   color: #292929;
 }
 
 .headline {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 2.6666666667rem;
 }
 
 .headline__title {
-  margin-bottom: 14px;
+  margin-bottom: 0.7777777778rem;
 }
 
 .headline__subtitle {
@@ -288,7 +293,7 @@ button {
 .benefits__item:before {
   content: url("../img/decor/separator.png");
   position: absolute;
-  top: 48px;
+  top: 2.6666666667rem;
   right: 0;
   transform: translateX(50%);
   /*background: #F2F5F4;*/
@@ -309,8 +314,8 @@ button {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 7.1111111111rem;
+  height: 7.1111111111rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -318,8 +323,8 @@ button {
 }
 
 .benefit__icon {
-  width: 68px;
-  height: 68px;
+  width: 3.7777777778rem;
+  height: 3.7777777778rem;
   fill: black;
   position: absolute;
   top: 50%;
@@ -329,7 +334,7 @@ button {
 
 .benefit__title {
   font-weight: bold;
-  font-size: 27px;
+  font-size: 1.5rem;
   color: #292929;
 }
 
@@ -341,28 +346,28 @@ button {
 .benefits-section:before {
   content: url("../img/decor/bars-and-berries.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -4.4444444444rem;
   left: 0;
 }
 
 .reviews__display {
   background: #F8FAF9 url("../img/decor/drown-berries.png") right top no-repeat;
-  padding: 42px 142px 42px 40px;
-  margin-bottom: 10px;
+  padding: 2.3333333333rem 7.8888888889rem 2.3333333333rem 2.2222222222rem;
+  margin-bottom: 0.5555555556rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #F2F5F4;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -3.6111111111rem;
 }
 
 .reviews__display-inner {
@@ -370,8 +375,8 @@ button {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 264px;
+  width: 14.1111111111rem;
+  height: 14.6666666667rem;
 }
 
 .reviews__avatar-img {
@@ -382,23 +387,23 @@ button {
 
 .reviews__content {
   flex: 1;
-  margin-left: 38px;
-  padding-top: 20px;
+  margin-left: 2.1111111111rem;
+  padding-top: 1.1111111111rem;
 }
 
 .reviews__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 0.6666666667rem;
 }
 
 .reviews__text {
-  margin-bottom: 26px;
+  margin-bottom: 1.4444444444rem;
   line-height: 1.22;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -409,9 +414,9 @@ button {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 4px solid transparent;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -453,7 +458,7 @@ button {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -461,12 +466,12 @@ button {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -475,11 +480,11 @@ button {
 .form__input {
   width: 100%;
   /*border: none;*/
-  padding: 18px 11px;
-  border: 3px solid transparent;
+  padding: 1rem 0.6111111111rem;
+  border: 0.1666666667rem solid transparent;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 .form__input:focus {
@@ -513,16 +518,16 @@ button {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   background: #365A49;
   border-radius: 50%;
   position: absolute;
@@ -540,25 +545,25 @@ button {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #ffffff;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #ffffff;
   position: absolute;
