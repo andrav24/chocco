@@ -6,6 +6,16 @@
   color: #ffffff;
   position: relative;
 
+  @include tablets {
+    background-position: right -10% bottom 65%;
+  }
+
+  &:before, &:after {
+    @include tablets {
+      display: none;
+    }
+  }
+
   &:before {
     content: url("../img/decor/corner-leaf.png");
     position: absolute;
@@ -18,6 +28,19 @@
     position: absolute;
     bottom: rem(-40px);
     right: 0;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(24px) 0 rem(50px);
+  background: url('../img/decor/chocolates.png') right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
   }
 }
 
@@ -35,15 +58,26 @@
 
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    &:before {
+      content: url("../img/decor/chocolate-and-berries.png");
+    }
+  }
 }
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: rem(24px) 0 rem(50px);
-  background: url('../img/decor/chocolates.png') right center / 50% auto no-repeat;
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }
 
 .hero__title-main {
@@ -59,4 +93,8 @@
   margin-bottom: rem(48px);
   padding-right: 15%;
   line-height: 1.24;
+
+  @include tablets {
+    padding: 0 25%;
+  }
 }
