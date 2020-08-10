@@ -1,10 +1,19 @@
 .form {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 19%;
+  }
 }
 
 .form__col {
   flex: 1;
   margin-right: rem(20px);
+
+  @include tablets {
+    margin-right: 0;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -45,4 +54,12 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+}
+
+.form__btns {
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
 }
