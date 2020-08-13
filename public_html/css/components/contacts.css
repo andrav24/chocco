@@ -1,0 +1,11 @@
+.contacts {
+  display: flex;
+  flex-direction: column; }
+
+.contacts__place {
+  font-size: rem(21px);
+  font-weight: normal;
+  font-style: normal;
+  color: #292929; }
+
+/*# sourceMappingURL=contacts.css.map */
