@@ -4,6 +4,11 @@
   margin-bottom: rem(10px);
   overflow: hidden;
   position: relative;
+
+  @include phones {
+    padding-right: rem(28px);
+    padding-left: rem(28px);
+  }
   
   &:before {
     content: "";
