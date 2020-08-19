@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chocco</title>
   <link rel="stylesheet" href="./css/main.css">
@@ -40,13 +40,19 @@
               </li>
             </ul>
           </nav>
-          <a class="phone-number" href="tel:+78009039090">
-              <span class="phone-number__icon">
-                <svg class="phone-number__icon-elem" fill="white" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+          <a class="phone-number header__phone-number" href="tel:+78009039090">
+            <span class="phone-number__icon">
+                <svg class="phone-number__icon-elem--color--white"
+                     xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="./img/icons/sprite.svg#phone"></use>
                 </svg>
               </span>
             <span class="phone-number__text">8 800 903 90 90</span>
+          </a>
+          <a class="hamburger" href="#">
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
+            <span class="hamburger__plank"></span>
           </a>
         </header>
         <div class="hero__title-section">
@@ -263,7 +269,57 @@
         </form>
       </div>
     </section>
-    <div style="height: 600px"></div>
+    <section class="section contacts-section">
+      <div class="map">
+        <img class="map__img" src="./img/content/map.png" alt="contacts map">
+      </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <address class="contacts">
+            <div class="contacts__place">Москва, ул.Новый Арбат, д.31/12</div>
+            <a class="phone-number phone-number--color--green" href="tel:+78009039090">
+              <span class="phone-number__icon">
+                  <svg class="phone-number__icon-elem phone-number__icon-elem--color--green"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href=".img/icons/sprite.svg#phone"></use>
+                  </svg>
+                </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+          </address>
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__item--icon--vk" href="#">
+                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__item--icon--fb" href="#">
+                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__item--icon--insta" href="#">
+                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/sprite.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__item--icon--twit" href="#">
+                <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/icons/sprite.svg#twit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
   </div>
 </div>
 <nav class="fixed-menu">

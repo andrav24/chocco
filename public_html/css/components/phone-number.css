@@ -1,0 +1,12 @@
+.phone-number {
+  display: flex;
+  align-items: center;
+  font-size: rem(22px);
+  text-decoration: none; }
+
+.phone-number__icon-elem {
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px); }
+
+/*# sourceMappingURL=phone-number.css.map */

@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__item {
+  margin-right: rem(14px);
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  background: center center no-repeat;
+}
+
+.socials__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+}

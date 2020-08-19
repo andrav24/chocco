@@ -3,10 +3,18 @@
   background: url("../img/decor/side-leaf.png") left top 57% no-repeat;
   background-color: #F2F5F4;
 
+  @include phones {
+    background: none;
+  }
+
   &:before {
     content: url("../img/decor/bars-and-berries.png");
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 }

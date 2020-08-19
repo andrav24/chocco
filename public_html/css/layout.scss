@@ -1,9 +1,20 @@
+html {
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  font-size: $baseFontSize;
   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -22,12 +33,12 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
 }
 
 .container {
-  width: $containerWidth;
+  width: 95%; /*чтобы при сужении/расширении окна был небольшой отступ.Альтернативный вариант width: 100%; padding: rem(10px) rem(10px);*/
+  max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
 }
@@ -45,6 +56,7 @@ table {
 ul {
   margin: 0;
   padding: 0;
+
   li {
     list-style: none;
   }
